@@ -1,12 +1,12 @@
 pulpit > vsc > create-next-app nazwaFolderu 
-    next.config.js,<script>
+    next.config.js,
+
+    <script>
     const withSass = require('@zeit/next-sass')
     const withCSS = require('@zeit/next-css')
-
-
     module.exports = withCSS(withSass());
+    </script> 
 
-    </script>  
     package.json <script>   
     @zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
