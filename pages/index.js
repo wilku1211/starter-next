@@ -20,6 +20,12 @@ const Home = () => (
 
       <p className="description" >w heroku Reveal Config Vars DB_URI, adres z mlab, dev.js </p>
       <p className="description" >Sprawdz w postman przy uruchomionym localhost 300, nastepnie próba heroku zmina npm start</p>
+
+      <p className="description" >Sprawdz czy axios Instnce i server maja ten sam adres</p>
+
+      <p className="description" >Optymalizacja obrazków w necie</p>
+
+
       <Link  route={`/blog`}>
               <a  >Wiécej</a>
             </Link>
