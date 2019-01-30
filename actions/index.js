@@ -9,14 +9,14 @@ const axiosInstance = axios.create({
 
 
 export const getPortfolios = async () => {
-   return await axiosInstance.get('/portfolioForm').then(response => response.data);
+   return await axiosInstance.get('/books').then(response => response.data);
  }
 
 export const getPortfolioById = async (id) => {
-   return await axiosInstance.get(`/portfolioForm/${id}`).then(response => response.data);
+   return await axiosInstance.get(`/books/${id}`).then(response => response.data);
  }
 export const DelPortfolioById = async (id) => {
-   return await axiosInstance.delete(`/portfolioForm/${id}`).then(response => response.data);
+   return await axiosInstance.delete(`/books/${id}`).then(response => response.data);
  }
 
 
@@ -28,8 +28,8 @@ export const postPortfolios = async (x) => {
       one.color= headingValues.subtitle
       */
 
-   return await axiosInstance.post(`/portfolioForm`, one).then(response => response.data);
+   return await axiosInstance.post(`/books`, one).then(response => response.data);
  }
 
  export const updatePortfolioById = async (x, y) => {
-  return await axiosInstance.patch(`/portfolioForm/${x._id}`,y).then(response => response.data);
+  return await axiosInstance.patch(`/books/${x._id}`,y).then(response => response.data);}

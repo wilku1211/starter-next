@@ -11,7 +11,7 @@
 /dist
 /.next
 
-/server/config/dev.js
+#/server/config/dev.js
 
 
 # misc

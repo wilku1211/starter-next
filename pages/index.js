@@ -1,16 +1,44 @@
-import React from 'react'
+import React, { Component } from 'react';
 import Head from '../components/head'
 import Nav from '../components/nav'
 import {Link} from '../routes'
+import * as Axios from '../actions';
+import axios from 'axios';
+  
+ class Index extends Component {
+
+  static async getInitialProps({ req, res, query }) {
+    let data;
+    console.log(query); 
+    try {
+      const res = await Axios.getPortfolios()
+      data = await res; 
 
 
-const Home = () => (
+    } catch (err) {
+      console.log(err);
+      data = [];
+    }
+  
+    return { data};
+  }
+  
+ render() {
+   const {data}= this.props
+   console.log(data);
+  
+ return (
   <div>
-    <Head title="Home" />
+     <Head title="Home" /> 
     <Nav />
 
     <div className=" ">
-      <h1 className="title"> wtyczka scss intel wyL/wl vsc</h1>
+      <p className="title"> wtyczka scss intel wyL/wl vsc</p>
+      
+      <p className="title"> package.json  uważaj na przecinki 
+  po każdym dodanym pliku do pages resetuj serv, zmiana  scripts "start" heroku/localhost</p>
+
+      
 
       <p className="description" >Przy serv dev.js do .gitignore</p>
 
@@ -25,6 +53,10 @@ const Home = () => (
 
       <p className="description" >Optymalizacja obrazków w necie</p>
 
+      <p className="description" >Sprawdz czy dziala compression</p>
+      
+
+
 
       <Link  route={`/blog`}>
               <a  >Wiécej</a>
@@ -35,6 +67,8 @@ const Home = () => (
       
     `}</style>
   </div>
-)
+);
+}
+}
+export default Index
 
-export default Home
