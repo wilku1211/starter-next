@@ -1,8 +1,12 @@
 @import "custom/base/variables";
 
-@import ".././node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap";
 @import 'custom/base/typography';
 @import 'custom/base/mixins';
 @import 'custom/components/components';
 @import 'custom/pages/pages';
 
+body{
+   background-color: rgb(70, 63, 63);
+   color:rgb(136, 112, 112)
+}

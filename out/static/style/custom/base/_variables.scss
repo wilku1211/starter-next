@@ -1,0 +1,75 @@
+//COLORS
+
+/* $ms-black:                   #000000;
+$ms-gray-900:                #111111;
+$ms-gray-800:                #333333;
+$ms-gray-700:                #595959;
+$ms-gray-600:                #666666;
+$ms-gray-500:                #7c7c7c;
+$ms-gray-400:                #b5b5b5;
+$ms-gray-300:                #b9b9b9;
+$ms-white:                   #FFFFFF; */
+
+// Wlasne zmienne - kolory
+/* $accent-color:            #e8bf5d;      
+
+$body-color:                 $ms-gray-600; //p, span
+$headings-color:               $ms-gray-900; */
+
+// Kolory Bootstrap 4
+/* $theme-colors: (
+     "success":                $success,
+    "info":                  $info,
+    "warning":               $warning,
+      "danger":                rgb(251, 251, 251),
+    "light":                 $light,
+    "dark" :                 $light,
+  
+    "secondary":             $ms-gray-900,
+    "primary":               $accent-color
+);
+ */
+
+// tekst
+$font-family-sans-serif:       'Open Sans Condensed', sans-serif;  //body
+$headings-font-family:          'Coiny', cursive;
+$headings-font-weight:         400;
+
+$font-size-base:                .875rem; //!rem
+$line-height-base:              2.21; 
+
+// nadaje rozimiar dla tag i .class
+ $h1-font-size:                  65px;
+$h2-font-size:                  31px;
+$h3-font-size:                  25px;
+$h4-font-size:                  21px;
+$h5-font-size:                  16px;
+$h6-font-size:                  14px; 
+
+$display1-size:               6rem;
+$display2-size:                 5.5rem ;
+$display3-size:                 21px ;
+$display4-size:                 31px ;
+
+
+// obramowania
+/* $border-radius:                 4rem;
+$border-radius-lg:              0;
+$border-radius-sm:              0; */
+
+//FORM
+
+//$input-padding-y:           $input-btn-padding-y ;
+//$input-padding-x:             0 ;
+//$input-line-height:         $input-btn-line-height ;
+
+
+/* $input-placeholder-color:      $ms-gray-300 ;
+$input-bg:                     #fff;
+$input-border-color:           #d6d6d6  ;
+$input-border-width:           1px ; */
+
+
+//$input-border-radius:          0;
+//$input-border-radius-lg:     0;
+//$input-border-radius-sm:     0 ;

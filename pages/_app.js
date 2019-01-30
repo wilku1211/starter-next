@@ -1,6 +1,7 @@
 import React from 'react';
 import App, { Container } from 'next/app';
-import '../style/myBootstrap.scss';
+import '../static/style/myBootstrap.scss';
+import Head from '../components/head';
 
 
 export default class MyApp extends App {
@@ -12,9 +13,14 @@ export default class MyApp extends App {
 
     return (
       <Container>
+        <div >
+        <Head></Head>
         <Component {...pageProps} />
-        <div className=""></div>
+        </div>
       </Container>
     )
   }
 }
+<style jsx global>{`
+
+`}</style>
