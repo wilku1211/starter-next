@@ -7,7 +7,8 @@ pulpit > vsc > create-next-app nazwaFolderu
     module.exports = withCSS(withSass());
     </script> 
 
-    package.json <script>   
+    package.json 
+    <script>   
     @zeit/next-css": "^1.0.1",
     "@zeit/next-sass": "^1.0.1",
         "node-sass": "^4.11.0",
