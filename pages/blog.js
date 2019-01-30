@@ -1,5 +1,5 @@
 import React from 'react';
-import Router from "next/router";
+import Router from '../routes';
 
    
 const Blog = ( props ) => {

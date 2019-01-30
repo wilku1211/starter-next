@@ -9,7 +9,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
 const config = require('./config');
-//const bookRoutes = require('./routes/book');
+const bookRoutes = require('./routes/book');
 
 const PORT = process.env.PORT || 3000;
 
@@ -23,7 +23,7 @@ app.prepare()
   const server = express()
   server.use(bodyParser.json());
 
- ////server.use('/api/v1/books', bookRoutes);
+ server.use('/api/v2/books', bookRoutes);
 
   server.get('*', (req, res) => {
     return handler(req, res)
